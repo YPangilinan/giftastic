@@ -14,7 +14,7 @@
 
     <div class="buttons"></div>
 
-    <div class="gifs-go-here"></div>
+    <div id="gifs-go-here"></div>
 
 
 
@@ -31,16 +31,106 @@
     //initial aray of topics
     var topics = ["corgi", "weights", "tulips", "disneyland", "simba"];
 
-    //create a function to display gif info
+    //create a onclick function for ajax to be called when a specific button is pressed
     //create queryURL variable to hold api key
-    var topic = 
-    var queryURL = 
+    $("button").on("click", function(){
+        var subject = $(this).attr("data-topic");
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
+        subject + "&api_key=jYUXFR4smqls1PsJGd9uX9MCg8qqoE0N&limit=10";
+   
+    
 
     //initiate ajax call within function 
 
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+        .then(function(response){
+            console.log(response)
+
+        var results = response.data;
+
+        for (var i=0; i< results.length; i++){
+     //make a div with and store it in a variable named topicDiv
+        var topicDiv = $("<div>");
+
+      //paragraph tag and store in variable p
+        var p = $("<p>");
+
+      //change inner text to show the rating of image
+        p.text("Rating: " + results[i].rating);
+
+      //create img tag and store in variable topicImage
+        var topicImage = $("<img>");
+
+      //set img src to results i .imagesfixed_height.still.url
+        topicImage.attr("src", results[i].images.fixed_height_still.url);
+
+      //add attr "data-still",results[i] fixed_height.still.url
+        topicImage.attr("data-still", results[i].images.fixed_height_still.url);
+
+      //add attr "data-animate", results[i].images.fixed_height.url
+        topicImage.attr("data-animate", results[i].images.fixed_height.url);
+
+    //add attr "data-state", "still"
+        topicImage.attr("data-state", "still");
+
+    //add class gif
+        topicImage.addClass("gif");
+
+      //append p variable to topic Div
+      topicDiv.append(p)
+
+      //append topic Image to topicDiv
+      topicDiv.append(topicImage);
+
+      //prepend topicDiv to #gifs-appear-here
+      $("#gifs-go-here").prepend(topicDiv);
+
+        }
+
+    })
+
+  })
+ })
 
 
-    //create function to create buttons from the initial array
+      //function to display gif data
+      //create a variable called results and set it equal to respose.data
+
+      //create a loop for results.length
+
+      
+
+
+    //create function to create buttons from the initial array and to push data into
+
+
+
+    //delete topics before adding new topics (to not have repeat buttons)
+    //loop through array of topics
+    //generate buttons for each button in the array
+    //create element
+    //add class "data-topic"
+    //add data-attribute
+    //initial text for button
+    //add to the buttons div
+
+
+    //create gif on click function that starts the image as still until the user clicks on it
+
+    //2) make a var named state then store the images data state in it
+
+    // coniditional statements for still or animate (check the pausing gifs)
+
+
+
+
+
+  
+
+
+
     
     
     
