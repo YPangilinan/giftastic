@@ -19,6 +19,11 @@ button{
     background:transparent;  
 }
 
+button:focus{
+    outline:0;
+    box-shadow:none!important;
+}
+
 #buttons{
     margin-top:10px;
     margin-bottom:20px;
@@ -31,6 +36,12 @@ button{
     letter-spacing:5px;
     color:white;
     background:transparent;
+    padding:10px;
+}
+
+#add-subject:focus{
+    outline:0;
+    box-shadow:none!important;
 }
 
 #add-new{
@@ -44,6 +55,7 @@ button{
 .jumbotron{
     background: url("images/banner3.png") center center no-repeat;
     height:400px;
+    margin-bottom:8px;
 }
 
 .container{
@@ -54,5 +66,5 @@ button{
 
 .gifs{
     float:left;
-    margin:10px;
+    margin:5px;
 }
