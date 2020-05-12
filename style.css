@@ -1,0 +1,23 @@
+button{
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+    letter-spacing: 2px;
+    margin:5px;
+}
+
+#buttons{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+.jumbotron{
+    background: url("images/banner.png") center center no-repeat;
+    height:400px;
+}
+
+
+.gifs{
+    float:left;
+    margin:10px;
+}

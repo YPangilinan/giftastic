@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-var topics = ["science","corgi", "weights", "tulips", "disneyland", "simba"];
+var topics = ["leslie knope","lil sebastian", "treat yo' self ", "ron swanson", "gryzzl", "cones of dunshire", "money please", "LITerally"];
 var results;
 
 function createButtons(){
