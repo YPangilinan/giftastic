@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-var topics = ["leslie knope","lil sebastian", "treat yo' self ", "ron swanson", "gryzzl", "cones of dunshire", "money please", "LITerally"];
+var topics = ["Leslie Knope", "Treat Yo' Self ", "Ron Swanson", "Gryzzl", "Cones of Dunshire", "Money Please", "LITerally", "Janet Snakhole"];
 var results;
 
 function createButtons(){

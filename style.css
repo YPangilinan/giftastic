@@ -4,11 +4,15 @@ button{
 	font-size: 15px;
     letter-spacing: 2px;
     margin:5px;
+    margin-bottom:20px;
+   
 }
 
 #buttons{
     margin-top:10px;
     margin-bottom:20px;
+    padding: 5px;
+   
 }
 
 .jumbotron{
