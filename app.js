@@ -11,7 +11,7 @@ function createButtons(){
         var a = $("<button>");
         a.addClass("subject");
         a.attr("data-topic", topics[i]);
-        a.text(topics[i]);
+        a.text(topics[i].toUpperCase());
         $(".buttons").append(a);        
     };
 };
@@ -57,7 +57,7 @@ $.ajax({
 
         var topicDiv = $("<div>");
         var p = $("<p>");
-         p.text("Rating: " + results[i].rating);
+         p.text("RATING: " + results[i].rating.toUpperCase());
 
     var topicImage = $("<img>");
     topicImage.attr("src", results[i].images.fixed_height_still.url);

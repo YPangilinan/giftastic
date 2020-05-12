@@ -1,25 +1,56 @@
+body{
+    font-family: 'Fjalla One', sans-serif;
+    background-image: url("images/background.png");
+    color:white;
+    letter-spacing:3px;
+}
+
 button{
-	font-family: 'Oxygen', sans-serif;
-	font-weight: 400;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 500;
+    color:white;
 	font-size: 15px;
     letter-spacing: 2px;
     margin:5px;
     margin-bottom:20px;
-   
+    border-radius:5px;
+    padding:10px;
+    background:transparent;  
 }
 
 #buttons{
     margin-top:10px;
     margin-bottom:20px;
-    padding: 5px;
-   
+    padding: 5px;  
+}
+
+#add-subject{
+    margin-top:10px;
+    border-radius:5px;
+    letter-spacing:5px;
+    color:white;
+    background:transparent;
+}
+
+#add-new{
+    border-radius:10px; 
+}
+
+.card{
+    background: transparent;
 }
 
 .jumbotron{
-    background: url("images/banner.png") center center no-repeat;
+    background: url("images/banner3.png") center center no-repeat;
     height:400px;
 }
 
+.container{
+    width:2000px;
+    max-height: 300px;
+    overflow:auto;
+}
 
 .gifs{
     float:left;
