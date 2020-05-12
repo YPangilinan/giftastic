@@ -25,8 +25,8 @@ button:focus{
 }
 
 #buttons{
-    margin-top:10px;
-    margin-bottom:20px;
+    margin-top:5px;
+    margin-bottom:10px;
     padding: 5px;  
 }
 
@@ -55,7 +55,7 @@ button:focus{
 .jumbotron{
     background: url("images/banner3.png") center center no-repeat;
     height:400px;
-    margin-bottom:8px;
+    margin-bottom:10px;
 }
 
 .container{

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 //initial array of topics
-var topics = ["Leslie Knope", "Treat Yo' Self ", "Ron Swanson", "Gryzzl", "Cones of Dunshire", "Money Please", "LITerally", "Janet Snakhole"];
+var topics = ["Leslie Knope", "Treat Yo' Self ", "Ron Swanson", "Gryzzl", "Cones of Dunshire", "Money Please", "LITerally", "Pawnee"];
 //global variable
 var results;
 
